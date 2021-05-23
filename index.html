@@ -145,13 +145,24 @@
             Взрослые:
             <input type="text" name="adult-count" placeholder="2">
           </label>
-        </p>
-        <p>
+        
           <label>
             Дети:
             <input type="text" name="children-count" placeholder="0">
-          </label>
+          </label> <!-- нужно ли на данном этапе разметки заморачиваться с "-" и "+"? потому что это меня сейчас очень тормозит и я совсем не представляю как это сделать. -->
         </p>
+        <!-- <p>
+            <label for="adult-count">Взрослые:</label>
+            <button type="button">-</button>
+            <input type="text" name="adult-count" placeholder="2" id="adult-count">
+            <button type="button">+</button>
+          
+        
+            <label for="children-count">Дети:</label>
+            <button type="button">-</button>
+            <input type="text" name="children-count" placeholder="0" id="children-count">
+            <button type="button">+</button>
+        </p> -->
         <button type="submit">Найти</button>
       </form>
     </section>
