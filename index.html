@@ -9,7 +9,7 @@
     <header>
       <nav>
         <a>
-         <img scr="https://via.placeholder.com/150x100" width="138" height="70" alt="Герб города Седона">
+         <img src="https://via.placeholder.com/150x100" width="138" height="70" alt="Герб города Седона">
         </a> 
         <ul>
          <li><a href="blank.html">Информация</a></li>
@@ -40,13 +40,13 @@
         <h2>Преимущества</h2>
         <ol>
           <li>
-            <img scr="https://via.placeholder.com/150x100" width="150" height="100" alt="Одна из улочек города Седона">
+            <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Одна из улочек города Седона">
             <h3>Настоящий городок</h3>
             <p>— №1 —</p>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li>
-            <img scr="https://via.placeholder.com/150x100" width="150" height="100" alt="Местный каньон">
+            <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Местный каньон">
             <h3>Там есть Мост дьявола</h3>
             <p>— №2 —</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -67,8 +67,8 @@
             <p>большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
+        <h3>Тревел лайфхаки</h3> <!-- <h3>Советы при посещении</h3> -->
         <ul>
-          <h3>Тревел лайфхаки</h3> <!-- <h3>Советы при посещении</h3> -->
           <li>
             <h4>Жильё</h4>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -129,29 +129,16 @@
       <h2>Поиск гостиницы в Седоне</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label>
-            Дата заезда:
-            <input type="date" name="arrival-date" placeholder="24 апреля 2017">
-          </label>
+          <label for="arrival-date">Дата заезда:</label>
+          <input type="text" name="arrival-date" placeholder="24 апреля 2017" id="arrival-date">
+          <button type="button">Календарь</button>
         </p>
         <p>
-          <label>
-            Дата выезда:
-            <input type="date" name="departure-date" placeholder="4 июля 2017">
-          </label>
+          <label for="departure-date">Дата заезда:</label>
+          <input type="text" name="departure-date" placeholder="4 июля 2017" id="departure-date">
+          <button type="button">Календарь</button>
         </p>
         <p>
-          <label>
-            Взрослые:
-            <input type="text" name="adult-count" placeholder="2">
-          </label>
-        
-          <label>
-            Дети:
-            <input type="text" name="children-count" placeholder="0">
-          </label> <!-- нужно ли на данном этапе разметки заморачиваться с "-" и "+"? потому что это меня сейчас очень тормозит и я совсем не представляю как это сделать. -->
-        </p>
-        <!-- <p>
             <label for="adult-count">Взрослые:</label>
             <button type="button">-</button>
             <input type="text" name="adult-count" placeholder="2" id="adult-count">
@@ -162,7 +149,7 @@
             <button type="button">-</button>
             <input type="text" name="children-count" placeholder="0" id="children-count">
             <button type="button">+</button>
-        </p> -->
+        </p>
         <button type="submit">Найти</button>
       </form>
     </section>
