@@ -21,92 +21,10 @@
     </header>
 
     <main>
-
-        <h1>Каталог гостиниц</h1>
-
         <section>
-            <h2>Поиск гостиниц</h2>
-            <img src="https://via.placeholder.com/150x100" width="150" height="100" alt=""> <!--задний фон секции-->
-            <form method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                    <h3>Инфраструктура:</h3>
-                    <ul>
-                        <li>
-                            <label>
-                               <input type="checkbox" name="pool" checked>
-                               Бассейн
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                               <input type="checkbox" name="parking">
-                               Парковка
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                               <input type="checkbox" name="wi-fi">
-                               Wi-Fi
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <h3>Тип жилья:</h3>
-                    <ul>
-                        <li>
-                            <label>
-                               <input type="checkbox" name="hotel" checked>
-                               Гостиница
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                               <input type="checkbox" name="motel" checked>
-                               Мотель
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                               <input type="checkbox" name="apartments" checked>
-                               Апартаменты
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <h3>Стоимость в сутки, ₽:</h3>
-                    <table>
-                        <tr>
-                            <td>
-                              <label for="min-price">От 0</label> 
-                            </td>
-                            <td>
-                              <label for="max-price">До 3000</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="range" id="min-price" name="min-price" min="0" max="1500" value="0" step="100">
-                            </td>
-                            <td>
-                                <input type="range" id="max-price" name="max-price" min="1500" max="4000" value="3000" step="100">
-                            </td>
-                        </tr>
-                    </table>
-                </fieldset>
-                <button type="submit">Показать</button>
-            </form>
-        </section>
-        <section>
-            <h2>Сортировка</h2>
-            <ul>
-                <li>
-                    Найдено: 3
-                </li>
-                <li>
-                    Сортировка:
-                </li>
+            <span>>Найдено: 3</span>
+            <span>Сортировка:</span>
+            <ol>
                 <li>
                     <button type="button" name="by-price">По цене</button>
                 </li>
@@ -116,13 +34,9 @@
                 <li>
                     <button type="button" name="by-rating">По рейтингу</button>
                 </li>
-                <li>
-                    <input type="image" src="https://via.placeholder.com/150x100" alt="По возростанию"> <!--это будет стрелка вверх-->
-                </li>
-                <li>
-                    <input type="image" src="https://via.placeholder.com/150x100" alt="По убыванию"> <!--это будет стрелка вниз-->
-                </li>
-            </ul>
+            </ol>
+            <input type="image" src="https://via.placeholder.com/150x100" alt="По возростанию"> <!--это будет стрелка вверх-->
+            <input type="image" src="https://via.placeholder.com/150x100" alt="По убыванию"> <!--это будет стрелка вниз-->
         </section>
         <section>
             <h2>Результаты поиска</h2>
@@ -130,92 +44,44 @@
                 <li>
                     <a href="blank.html">
                         <h3>Amara Resort & Spa</h3>
-                        <p>
-                            <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Amara Resort & Spa">
-                        </p>
                     </a>
-                    <table>
-                        <tr>
-                            <td>
-                                Гостиница
-                            </td>
-                            <td>
-                                От 4000
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="blank.html">Подробнее</a>
-                            </td>
-                            <td>
-                                <a href="blank.html">Забронировать</a>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>
-                        <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="4 звезды">
-                    </p>
-                    <p>Рейтинг: 8,5 </p>
+                    <a href="blank.html">
+                        <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Amara Resort & Spa">
+                    </a>
+                    <span>Гостиница</span>
+                    <span>От 4000</span>
+                    <a href="blank.html">Подробнее</a>
+                    <a href="blank.html">Забронировать</a>
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="4 звезды">
+                    <span>Рейтинг: 8,5 </span>
                 </li>
                 <li>
                     <a href="blank.html">
                         <h3>Desert Quail Inn</h3>
-                        <p>
-                            <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Desert Quail Inn">
-                        </p>
                     </a>
-                    <table>
-                        <tr>
-                            <td>
-                                Мотель
-                            </td>
-                            <td>
-                                От 3000
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="blank.html">Подробнее</a>
-                            </td>
-                            <td>
-                                <a href="blank.html">Забронировать</a>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>
-                        <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="3 звезды">
-                    </p>
-                    <p>Рейтинг: 8,9 </p>
+                    <a href="blank.html">
+                        <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Desert Quail Inn">
+                    </a>
+                    <span>Мотель</span>
+                    <span>От 3000</span>
+                    <a href="blank.html">Подробнее</a>
+                    <a href="blank.html">Забронировать</a>
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="3 звезды">
+                    <span>Рейтинг: 8,9 </span>
                 </li>
                 <li>
                     <a href="blank.html">
                         <h3>Villas at Poco Diablo</h3>
-                        <p>
-                            <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Villas at Poco Diablo">
-                        </p>
                     </a>
-                    <table>
-                        <tr>
-                            <td>
-                                Апартаменты
-                            </td>
-                            <td>
-                                От 2000
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="blank.html">Подробнее</a>
-                            </td>
-                            <td>
-                                <a href="blank.html">Забронировать</a>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>
-                        <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="2 звезды">
-                    </p>
-                    <p>Рейтинг: 9,2 </p>
+                    <a href="blank.html">
+                        <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Villas at Poco Diablo">
+                    </a>
+                    <span>Апартаменты</span>
+                    <span>От 2000</span>
+                    <a href="blank.html">Подробнее</a>
+                    <a href="blank.html">Забронировать</a>
+                    <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="2 звезды">
+                    <span>Рейтинг: 9,2 </span>
                 </li>
             </ul>
         </section>
