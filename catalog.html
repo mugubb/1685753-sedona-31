@@ -1,119 +1,134 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico">
-  </head>
-  <body>
 
-    <header>
-      <nav>
-        <a href="index.html">
-          <img src="img/logo.svg" width="138" height="70" alt="Герб города Седона">
-        </a> 
-        <ul>
-         <li><a href="blank.html">Информация</a></li>
-         <li><a href="blank.html">Фото и видео</a></li>
-         <li><a href="blank.html">Карта штата</a></li>
-         <li><a href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+</head>
 
-    <main>
-        <section>
-            <div></div> <!-- background.png -->
-            <span>>Найдено: 3</span>
-            <span>Сортировка:</span>
-            <ol>
-                <li>
-                    <button type="button" name="by-price">По цене</button>
-                </li>
-                <li>
-                    <button type="button" name="by-type">По типу</button>
-                </li>
-                <li>
-                    <button type="button" name="by-rating">По рейтингу</button>
-                </li>
-            </ol>
-            <div></div> <!-- По возрастанию-->
-            <div></div> <!-- По убыванию-->
-        </section>
-        <section>
-            <h2>Результаты поиска</h2>
-            <ol>
-                <li>
-                   <a href="blank.html">
-                        <img src="img/catalog/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
-                    </a>
-                    <a href="blank.html">
-                        <h3>Amara Resort & Spa</h3>
-                    </a>
-                    <span>Гостиница</span>
-                    <span>От 4000</span>
-                    <a href="blank.html">Подробнее</a>
-                    <a href="blank.html">Забронировать</a>
-                    <div></div><!-- Звезда-->
-                    <div></div><!-- Звезда-->
-                    <div></div><!-- Звезда-->
-                    <div></div><!-- Звезда-->
-                    <div></div><!-- Звезда-->
-                    <span>Рейтинг: 8,5 </span>
-                </li>
-                <li> 
-                    <a href="blank.html">
-                        <img src="img/catalog/Desert-Quail-Inn.jpg" width="135" height="90" alt="Desert Quail Inn">
-                    </a>
-                    <a href="blank.html">
-                        <h3>Desert Quail Inn</h3>
-                    </a>
-                    <span>Мотель</span>
-                    <span>От 3000</span>
-                    <a href="blank.html">Подробнее</a>
-                    <a href="blank.html">Забронировать</a>
-                    <div></div><!-- Звезда-->
-                    <div></div><!-- Звезда-->
-                    <div></div><!-- Звезда-->
-                    <span>Рейтинг: 8,9 </span>
-                </li>
-                <li>
-                    <a href="blank.html">
-                        <img src="img/catalog/Villas-at-Poco-Diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-                    </a>
-                    <a href="blank.html">
-                        <h3>Villas at Poco Diablo</h3>
-                    </a>
-                    <span>Апартаменты</span>
-                    <span>От 2000</span>
-                    <a href="blank.html">Подробнее</a>
-                    <a href="blank.html">Забронировать</a>
-                    <div></div><!-- Звезда-->
-                    <div></div><!-- Звезда-->
-                    <span>Рейтинг: 9,2 </span>
-                </li>
-            </ol>
-        </section>
-    </main>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <footer>
-      <span>#visitSEDONA</span>
-      <a href="tel:+78005558628">+7 800 555-86-28</a> 
-      <ul>
-        <li>
-          <a href="#">Twitter</a> <!-- img/twitter.svg -->
-        </li>
-        <li>
-          <a href="#">Facebook</a> <!-- img/fb-icon.svg -->
-        </li>
-        <li>
-          <a href="#">YouTube</a> <!-- youtube.svg -->
-        </li>
-      </ul>
-      <a href="https://htmlacademy.ru">
-        <span>Website by</span>
-        <img src="img/logo-htmlacademy.svg" width="138" height="70" alt="Website by Academy"> 
+<body class="page-body">
+
+  <header class="main-header">
+    <nav class="main-nav">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logo.svg" width="138" height="70" alt="Герб города Седона">
       </a>
-    </footer> 
-  </body>
+      <div class="main-navigation-wrapper">
+        <ul class="site-nav">
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div></div> <!-- background.png -->
+      <span>>Найдено: 3</span>
+      <span>Сортировка:</span>
+      <ol>
+        <li>
+          <button type="button" name="by-price">По цене</button>
+        </li>
+        <li>
+          <button type="button" name="by-type">По типу</button>
+        </li>
+        <li>
+          <button type="button" name="by-rating">По рейтингу</button>
+        </li>
+      </ol>
+      <div></div> <!-- По возрастанию-->
+      <div></div> <!-- По убыванию-->
+    </section>
+    <section>
+      <h2>Результаты поиска</h2>
+      <ol>
+        <li>
+          <a href="blank.html">
+            <img src="img/catalog/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
+          </a>
+          <a href="blank.html">
+            <h3>Amara Resort & Spa</h3>
+          </a>
+          <span>Гостиница</span>
+          <span>От 4000</span>
+          <a href="blank.html">Подробнее</a>
+          <a href="blank.html">Забронировать</a>
+          <div></div><!-- Звезда-->
+          <div></div><!-- Звезда-->
+          <div></div><!-- Звезда-->
+          <div></div><!-- Звезда-->
+          <div></div><!-- Звезда-->
+          <span>Рейтинг: 8,5 </span>
+        </li>
+        <li>
+          <a href="blank.html">
+            <img src="img/catalog/Desert-Quail-Inn.jpg" width="135" height="90" alt="Desert Quail Inn">
+          </a>
+          <a href="blank.html">
+            <h3>Desert Quail Inn</h3>
+          </a>
+          <span>Мотель</span>
+          <span>От 3000</span>
+          <a href="blank.html">Подробнее</a>
+          <a href="blank.html">Забронировать</a>
+          <div></div><!-- Звезда-->
+          <div></div><!-- Звезда-->
+          <div></div><!-- Звезда-->
+          <span>Рейтинг: 8,9 </span>
+        </li>
+        <li>
+          <a href="blank.html">
+            <img src="img/catalog/Villas-at-Poco-Diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+          </a>
+          <a href="blank.html">
+            <h3>Villas at Poco Diablo</h3>
+          </a>
+          <span>Апартаменты</span>
+          <span>От 2000</span>
+          <a href="blank.html">Подробнее</a>
+          <a href="blank.html">Забронировать</a>
+          <div></div><!-- Звезда-->
+          <div></div><!-- Звезда-->
+          <span>Рейтинг: 9,2 </span>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer-contacts">
+      <span>#visitSEDONA</span>
+      <a href="tel:+78005558628">+7 800 555-86-28</a>
+    </div>
+    <ul class="footer-social-list">
+      <li class="footer-social-item">
+        <a href="#">Twitter</a> <!-- img/twitter.svg -->
+      </li>
+      <li class="footer-social-item">
+        <a href="#">Facebook</a> <!-- img/fb-icon.svg -->
+      </li>
+      <li class="footer-social-item">
+        <a href="#">YouTube</a> <!-- youtube.svg -->
+      </li>
+    </ul>
+    <a class="footer-copyright" href="https://htmlacademy.ru">
+      <span >Website by</span>
+      <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Website by Academy">
+    </a>
+  </footer>
+</body>
+
 </html>
