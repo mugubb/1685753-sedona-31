@@ -26,6 +26,7 @@
   --basic-extra-light: #f2f2f2;
   --basic-white: #ffffff;
   --special: #eeeeee;
+  --special-grey: #666666;
 }
 
 body {
@@ -85,14 +86,13 @@ a {
   line-height: 26px;
 }
 
-.welcoming-head {
+.welcoming-title {
   font-size: 21px;
   font-weight: 700;
 }
 
 .features {
   text-align: center;
-  background-color: var(--basic-white);
 }
 
 .features-list {
@@ -103,19 +103,13 @@ a {
   line-height: 21px;
 }
 
-.feature-item-head {
+.feature-item-title {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
 }
 
-.first-special-item {
-  color: var(--basic-white);
-  background-color: var(--basic-light-blue);
-}
-
-.second-special-item {
-  color: var(--basic-white);
+.special-item {
   background-color: var(--basic-light-blue);
 }
 
@@ -124,11 +118,10 @@ a {
 }
 
 .interested {
-  background-color: var(--basic-white);
   text-align: center;
 }
 
-.interested-head {
+.interested-title {
   font-size: 30px;
   font-weight: 700;
 }
@@ -158,4 +151,81 @@ a {
 
 .footer-copyright {
   line-height: 26px;
+}
+
+/*catalog.html*/
+
+/*
+.sorting {
+}
+*/
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-result-number {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sorting-type {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-type-by {
+  font: inherit;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  color: var(--basic-black);
+  opacity: 0.3;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  border: none;
+}
+
+.sorting-type-by:hover {
+  color: var(--basic-light-blue);
+}
+
+.sorting-type-by:focus {
+  text-decoration-line: none;
+  text-decoration-style: none;
+  color: var(--basic-black);
+}
+
+.sorting-type-by:active {
+  text-decoration-line: none;
+  text-decoration-style: none;
+  color: var(--basic-light-blue);
+}
+/* я не могу понять, почему в активном состоянии не меняется цвет текста*/
+
+.search-result {
+  line-height: 21px;
+}
+
+.search-result-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search-result-list {
+  list-style: none;
+}
+
+.search-result-button-text {
+  color: var(--basic-white);
+  font-weight: bold;
+}
+
+.search-result-item-rating {
+  color: var(--special-grey);
 }
