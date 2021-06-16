@@ -205,7 +205,6 @@ a {
   text-decoration-style: none;
   color: var(--basic-light-blue);
 }
-/* я не могу понять, почему в активном состоянии не меняется цвет текста*/
 
 .search-result {
   line-height: 21px;
@@ -221,7 +220,7 @@ a {
   list-style: none;
 }
 
-.search-result-button-text {
+.search-text {
   color: var(--basic-white);
   font-weight: bold;
 }
