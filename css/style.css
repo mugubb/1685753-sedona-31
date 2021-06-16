@@ -84,7 +84,6 @@ a {
 .main-header-logo {
   order: 1;
   justify-self: center;
-  grid-column: 1/-1;
 }
 
 .site-nav {
