@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,114 +9,112 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
+<body>
 
-  <header class="main-header">
-    <nav class="main-nav">
+  <header>
+    <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/logo.svg" width="138" height="70" alt="Герб города Седона">
       </a>
-      <div class="main-navigation-wrapper">
-        <ul class="site-nav">
-          <li><a class="site-nav-link" href="blank.html">Информация</a></li>
-          <li><a class="site-nav-link" href="blank.html">Фото и видео</a></li>
-          <li><a class="site-nav-link" href="blank.html">Карта штата</a></li>
-          <li><a class="site-nav-link" href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </div>
+      <ul class="site-navigation">
+        <li><a class="site-nav-link" href="blank.html">Информация</a></li>
+        <li><a class="site-nav-link" href="blank.html">Фото и видео</a></li>
+        <li><a class="site-nav-link" href="blank.html">Карта штата</a></li>
+        <li><a class="site-nav-link" href="catalog.html">Гостиницы</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <div class="page-body">
+  <main>
 
-      <section class="welcoming">
-        <h3 class="welcoming-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </section>
+    <section class="welcoming">
+      <h3 class="welcoming-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </section>
 
-      <section class="features">
-        <ul class="features-list">
-          <li class="feature-item special-item">
+    <section>
+      <ul class="features-list">
+        <li class="special-item city">
+          <div class="text-wraper">
             <h3 class="feature-item-title">Настоящий городок</h3>
-            <p>№1</p>
+            <span>№1</span>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/street.jpg" width="800" height="256" alt="Одна из улочек города Седона">
-          </li>
-          <li class="feature-item">
-            <div></div> <!-- house.svg -->
-            <h3 class="feature-item-title">Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="feature-item">
-            <div></div> <!-- burger.svg -->
-            <h3 class="feature-item-title">Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="feature-item">
-            <div></div> <!-- present.svg -->
-            <h3 class="feature-item-title">Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-          <li class="feature-item special-item">
-            <img src="img/canyon.jpg" width="800" height="256" alt="Местный каньон">
+          </div>
+          <img src="img/street.jpg" width="800" height="256" alt="Одна из улочек города Седона">
+        </li>
+        <li class="item-1">
+          <div></div> <!-- house.svg -->
+          <h3 class="feature-item-title">Жильё</h3>
+          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </li>
+        <li class="item-2">
+          <div></div> <!-- burger.svg -->
+          <h3 class="feature-item-title">Еда</h3>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+        <li class="item-3">
+          <div></div> <!-- present.svg -->
+          <h3 class="feature-item-title">Сувениры</h3>
+          <p>Не только китайского, но и местного производства!</p>
+        </li>
+        <li class="special-item canyon">
+          <img src="img/canyon.jpg" width="800" height="256" alt="Местный каньон">
+          <div class="text-wraper">
             <h3 class="feature-item-title">Там есть Мост дьявола</h3>
-            <p>№2</p>
+            <span>№2</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </li>
-          <li class="feature-item feature-item-bg">
-            <h3 class="feature-item-title">Небольшая площадь</h3>
-            <p>№3</p>
-            <p>все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="feature-item feature-item-bg">
-            <h3 class="feature-item-title">Красивая дорога</h3>
-            <p>№4</p>
-            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="feature-item feature-item-bg">
-            <h3 class="feature-item-title">Мало туристов</h3>
-            <p>№5</p>
-            <p>большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="interested">
-        <h2 class="interested-title">Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="interested-search" href="catalog.html">Поиск гостиницы в Седоне</a>
-      </section>
-
-      <section class="modal-map">
-        <img src="img/map.png" width="1199" height="594" alt="Седона на кате США">
-      </section>
-
-    </div>
-  </main>
-
-  <footer class="main-footer">
-    <div class="container">
-      <div class="main-footer-contacts">
-        <span>#visitSEDONA</span>
-        <a href="tel:+78005558628">+7 800 555-86-28</a>
-      </div>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a href="#">Twitter</a> <!-- img/twitter.svg -->
+          </div>
         </li>
-        <li class="footer-social-item">
-          <a href="#">Facebook</a> <!-- img/fb-icon.svg -->
+        <li class="feature-item-bg list-3">
+          <h3 class="feature-item-title">Небольшая площадь</h3>
+          <span>№3</span>
+          <p>все достопримечательности находятся очень близко</p>
         </li>
-        <li class="footer-social-item">
-          <a href="#">YouTube</a> <!-- youtube.svg -->
+        <li class="feature-item-bg list-4">
+          <h3 class="feature-item-title">Красивая дорога</h3>
+          <span>№4</span>
+          <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+        </li>
+        <li class="feature-item-bg list-5">
+          <h3 class="feature-item-title">Мало туристов</h3>
+          <span>№5</span>
+          <p>большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
-      <a class="footer-copyright" href="https://htmlacademy.ru">
-        <span>Website by</span>
-        <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Website by Academy">
-      </a>
+    </section>
+
+    <section class="interested">
+      <h2 class="interested-title">Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <a class="interested-search" href="catalog.html">Поиск гостиницы в Седоне</a>
+    </section>
+
+    <section class="modal-map">
+      <img src="img/map.png" width="1200" height="594" alt="Седона на кате США">
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="main-footer-contacts">
+      <span>#visitSEDONA</span>
+      <a href="tel:+78005558628">+7 800 555-86-28</a>
     </div>
+    <ul class="footer-social-list">
+      <li>
+        <a href="#">Twitter</a> <!-- img/twitter.svg -->
+      </li>
+      <li>
+        <a href="#">Facebook</a> <!-- img/fb-icon.svg -->
+      </li>
+      <li>
+        <a href="#">YouTube</a> <!-- youtube.svg -->
+      </li>
+    </ul>
+    <a class="footer-copyright" href="https://htmlacademy.ru">
+      <span>Website by</span>
+      <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Website by Academy">
+    </a>
   </footer>
 
 </body>
