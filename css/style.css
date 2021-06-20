@@ -44,9 +44,6 @@ body {
 
   background-color: var(--basic-white);
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
 }
 
 img {
@@ -62,6 +59,7 @@ a {
 .main-navigation {
   line-height: 26px;
   font-weight: 700;
+  position: relative;
 }
 
 .main-header-logo {
@@ -113,46 +111,48 @@ a {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 330px auto 256px;
+  grid-template-rows: auto;
   grid-template-areas:
-    "city city city"
-    "item-1 item-2 item-3"
-    "canyon canyon canyon"
-    "list-3 list-4 list-5";
+    "image-feature-first image-feature-first image-feature-first"
+    "item-first item-second item-third"
+    "image-feature-second image-feature-second image-feature-second"
+    "list-first list-second list-third";
 }
 
-.city {
-  grid-area: city;
+.features-list .list-element:nth-child(1) {
+  grid-area: image-feature-first;
+}
+
+.features-list .list-element:nth-child(2) {
+  grid-area: item-first;
+}
+
+.features-list .list-element:nth-child(3) {
+  grid-area: item-second;
+}
+
+.features-list .list-element:nth-child(4) {
+  grid-area: item-third;
+}
+
+.features-list .list-element:nth-child(5) {
+  grid-area: image-feature-second;
+}
+
+.features-list .list-element:nth-child(6) {
+  grid-area: list-first;
+}
+
+.features-list .list-element:nth-child(7) {
+  grid-area: list-second;
+}
+
+.features-list .list-element:nth-child(8) {
+  grid-area: list-third;
+}
+
+.feature-flex {
   display: flex;
-}
-
-.item-1 {
-  grid-area: item-1;
-}
-
-.item-2 {
-  grid-area: item-2;
-}
-
-.item-3 {
-  grid-area: item-3;
-}
-
-.canyon {
-  grid-area: canyon;
-  display: flex;
-}
-
-.list-3 {
-  grid-area: list-3;
-}
-
-.list-4 {
-  grid-area: list-4;
-}
-
-.list-5 {
-  grid-area: list-5;
 }
 
 .feature-item-title {
