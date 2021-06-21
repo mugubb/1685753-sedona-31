@@ -113,46 +113,50 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "image-feature-first image-feature-first image-feature-first"
-    "item-first item-second item-third"
-    "image-feature-second image-feature-second image-feature-second"
-    "list-first list-second list-third";
+    "first-feature image-feature-right image-feature-right"
+    "first-service second-service third-service"
+    "image-feature-left image-feature-left second-feature"
+    "third-feature fourth-feature fifth-feature";
 }
 
-.features-list .list-element:nth-child(1) {
-  grid-area: image-feature-first;
+.features-list-element:nth-child(1) {
+  grid-area: first-feature;
 }
 
-.features-list .list-element:nth-child(2) {
-  grid-area: item-first;
+.features-list-element:nth-child(2) {
+  grid-area: image-feature-right;
 }
 
-.features-list .list-element:nth-child(3) {
-  grid-area: item-second;
+.features-list-element:nth-child(3) {
+  grid-area: first-service;
 }
 
-.features-list .list-element:nth-child(4) {
-  grid-area: item-third;
+.features-list-element:nth-child(4) {
+  grid-area: second-service;
 }
 
-.features-list .list-element:nth-child(5) {
-  grid-area: image-feature-second;
+.features-list-element:nth-child(5) {
+  grid-area: third-service;
 }
 
-.features-list .list-element:nth-child(6) {
-  grid-area: list-first;
+.features-list-element:nth-child(6) {
+  grid-area: image-feature-left;
 }
 
-.features-list .list-element:nth-child(7) {
-  grid-area: list-second;
+.features-list-element:nth-child(7) {
+  grid-area: second-feature;
 }
 
-.features-list .list-element:nth-child(8) {
-  grid-area: list-third;
+.features-list-element:nth-child(8) {
+  grid-area: third-feature;
 }
 
-.feature-flex {
-  display: flex;
+.features-list-element:nth-child(9) {
+  grid-area: fourth-feature;
+}
+
+.features-list-element:nth-child(10) {
+  grid-area: fifth-feature;
 }
 
 .feature-item-title {
@@ -160,11 +164,11 @@ a {
   font-weight: 700;
 }
 
-.special-item {
+.features-image-bg {
   background-color: var(--basic-light-blue);
 }
 
-.feature-item-bg {
+.feature-special-bg {
   background-color: var(--special);
 }
 
