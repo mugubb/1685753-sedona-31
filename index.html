@@ -17,10 +17,10 @@
         <img src="img/logo.svg" width="138" height="70" alt="Герб города Седона">
       </a>
       <ul class="site-navigation">
-        <li><a class="site-nav-link" href="blank.html">Информация</a></li>
-        <li><a class="site-nav-link" href="blank.html">Фото и видео</a></li>
-        <li><a class="site-nav-link" href="blank.html">Карта штата</a></li>
-        <li><a class="site-nav-link" href="catalog.html">Гостиницы</a></li>
+        <li class="navigatoin-list-item"><a class="site-nav-link" href="blank.html">Информация</a></li>
+        <li class="navigatoin-list-item"><a class="site-nav-link" href="blank.html">Фото и видео</a></li>
+        <li class="navigatoin-list-item"><a class="site-nav-link" href="blank.html">Карта штата</a></li>
+        <li class="navigatoin-list-item"><a class="site-nav-link" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -34,12 +34,12 @@
 
     <section>
       <ul class="features-list">
-        <li class="features-image-bg features-list-element">
-          <h3 class="feature-item-title">Настоящий городок</h3>
-          <span>№1</span>
-          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        </li>
-        <li class="features-image-bg features-list-element">
+        <li class="features-image-box features-list-element">
+          <div class="features-text-wrapper">
+            <h3 class="feature-item-title">Настоящий городок</h3>
+            <span>№1</span>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
           <img src="img/street.jpg" width="800" height="256" alt="Одна из улочек города Седона">
         </li>
         <li class="features-list-element">
@@ -57,25 +57,25 @@
           <h3 class="feature-item-title">Сувениры</h3>
           <p>Не только китайского, но и местного производства!</p>
         </li>
-        <li class="features-image-bg features-list-element">
+        <li class="features-image-box features-list-element">
           <img src="img/canyon.jpg" width="800" height="256" alt="Местный каньон">
+          <div class="features-text-wrapper">
+            <h3 class="feature-item-title">Там есть Мост дьявола</h3>
+            <span>№2</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </li>
-        <li class="features-image-bg features-list-element">
-          <h3 class="feature-item-title">Там есть Мост дьявола</h3>
-          <span>№2</span>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </li>
-        <li class="feature-special-bg features-list-element">
+        <li class="feature-special-box features-list-element">
           <h3 class="feature-item-title">Небольшая площадь</h3>
           <span>№3</span>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="feature-special-bg features-list-element">
+        <li class="feature-special-box features-list-element">
           <h3 class="feature-item-title">Красивая дорога</h3>
           <span>№4</span>
           <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
-        <li class="feature-special-bg features-list-element">
+        <li class="feature-special-box features-list-element">
           <h3 class="feature-item-title">Мало туристов</h3>
           <span>№5</span>
           <p>Большинство едет в гранд каньон и толпится там</p>
@@ -95,8 +95,8 @@
 
   </main>
 
-  <footer>
-    <div class="main-footer-contacts">
+  <footer class="footer-wrapper">
+    <div class="footer-contacts">
       <span>#visitSEDONA</span>
       <a href="tel:+78005558628">+7 800 555-86-28</a>
     </div>
