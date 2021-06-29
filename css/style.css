@@ -81,11 +81,23 @@ a {
   width: 20%;
   padding-top: 15px;
   padding-bottom: 15px;
-  text-align: center;
+}
+
+.navigation-list-item:first-child {
+  padding-left: 72px;
 }
 
 .navigation-list-item:nth-child(2) {
   margin-right: 20%;
+}
+
+.navigation-list-item:nth-child(3) {
+  text-align: right;
+}
+
+.navigation-list-item:last-child {
+  padding-right: 72px;
+  text-align: right;
 }
 
 .navigation-link:hover {
