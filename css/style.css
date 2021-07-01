@@ -72,16 +72,20 @@ a {
 
 .navigation-list {
   margin: 0;
-  padding: 15px 60px;
+  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .navigation-list-item {
-  width: 15%;
-  padding: 0 12px;
+  width: 20%;
+  padding: 15px 60px;
+  box-sizing: border-box;
+}
+
+.navigation-list-item:nth-child(4n-3) {
+  padding-left: 72px;
 }
 
 .navigation-list-item:nth-child(4n-2) {
@@ -94,6 +98,7 @@ a {
 
 .navigation-list-item:nth-child(4n) {
   text-align: right;
+  padding-right: 72px;
 }
 
 .navigation-link:hover {
@@ -116,30 +121,26 @@ a {
 }
 
 .welcoming-bg {
-  background-image: url(../img/main-background.jpg);
-  background-position: top center;
+  background-image: url(../img/welcoming.png), url(../img/welcoming-shape.svg),
+    url(../img/main-background.jpg);
+  background-position: 50% 50%, bottom center, top center;
   background-repeat: no-repeat;
   height: 509px;
   width: 1200px;
 }
 
-.welcoming-phrase {
-  background-image: url(../img/welcoming.png), url(../img/welcoming-shape.svg);
-  background-position: 50% 50%, bottom center;
-  background-repeat: no-repeat;
-  height: 509px;
-}
-
 .welcoming-title {
   font-size: 21px;
   font-weight: 700;
-  margin-top: 26px;
-  padding: 14px 360px;
+  margin: 26px auto 0;
+  padding: 14px;
+  max-width: 500px;
 }
 
 .welcoming-text {
-  padding: 10px 340px;
-  margin-bottom: 42px;
+  padding: 10px;
+  max-width: 530px;
+  margin: 0 auto 42px;
 }
 
 .features-list {
