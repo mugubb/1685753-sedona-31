@@ -127,7 +127,7 @@ a {
 .welcoming-bg {
   background-image: url(../img/welcoming.png), url(../img/welcoming-shape.svg),
     url(../img/main-background.jpg);
-  background-position: 50% 50%, bottom center, top center;
+  background-position: center, bottom center, top center;
   background-repeat: no-repeat;
   height: 509px;
   width: 1200px;
@@ -176,57 +176,48 @@ a {
   font-size: 21px;
   font-weight: 700;
   margin: 0 auto 25px;
-  max-width: 150px; /*при 150рх в мозиле у заголовка во втором features-image-box идёт перенос на три строки, у хрома всё норм. Если ставлю 151рх, у мозилы становится всё норм, но в хроме перенос начинается по другому слову*/
+  max-width: 150px;
 }
 
 .feature-item-text {
   margin: 23px auto 0;
 }
 
-.features-rec-box {
-  padding: 55px 20px 82px;
+.features-recommendation-box {
+  padding: 55px 50px 82px;
   margin: auto;
 }
 
-.features-rec-box .feature-item-title {
-  padding-top: 28px;
-  padding-bottom: 25px;
-  margin: 0 auto;
-}
-
-.features-rec-box .feature-item-text {
-  margin: 0 auto;
-  max-width: 300px;
-}
-
-.first-rec-image {
+:nth-child(2) .recommendation-image {
   background-image: url(../img/house.svg);
   background-position: top center;
   background-repeat: no-repeat;
   height: 72px;
+  width: 75px;
+  margin: 0 auto 28px;
 }
 
-.second-rec-image {
+:nth-child(3) .recommendation-image {
   background-image: url(../img/burger.svg);
   background-position: top center;
   background-repeat: no-repeat;
   height: 70px;
+  width: 75px;
+  margin: 0 auto 28px;
 }
 
-.third-rec-image {
+:nth-child(4) .recommendation-image {
   background-image: url(../img/present.svg);
   background-position: top center;
   background-repeat: no-repeat;
   height: 77px;
+  width: 64px;
+  margin: 0 auto 28px;
 }
 
 .features-special-box {
   background-color: var(--special);
-  padding: 47px 20px 54px;
-}
-
-.features-special-box .feature-item-text {
-  max-width: 258px; /*тут тоже есть проблема с разным отображением шрифтов в мозиле и хроме*/
+  padding: 0 26px;
 }
 
 .interested {
