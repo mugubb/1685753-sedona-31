@@ -160,34 +160,73 @@ a {
   grid-template-rows: auto;
 }
 
-.features-list-element:nth-child(1),
-.features-list-element:nth-child(5) {
+.features-image-box {
   grid-column-start: 1;
   grid-column-end: -1;
+  background-color: var(--basic-light-blue);
+  display: flex;
+  align-items: center;
 }
 
-/*.features-list-element:nth-child(5) {
-  grid-column-start: 1;
-  grid-column-end: -1;
-}*/
+.features-text-wrapper {
+  padding: 50px 45px;
+}
 
 .feature-item-title {
   font-size: 21px;
   font-weight: 700;
+  margin: 0 auto 25px;
+  max-width: 150px; /*при 150рх в мозиле у заголовка во втором features-image-box идёт перенос на три строки, у хрома всё норм. Если ставлю 151рх, у мозилы становится всё норм, но в хроме перенос начинается по другому слову*/
 }
 
-.features-image-box {
-  background-color: var(--basic-light-blue);
-  display: flex;
+.feature-item-text {
+  margin: 23px auto 0;
 }
 
-.features-text-wrapper {
-  padding: 50px 25px;
+.features-rec-box {
+  padding: 55px 20px 82px;
+  margin: auto;
 }
 
-.feature-special-box {
+.features-rec-box .feature-item-title {
+  padding-top: 28px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+}
+
+.features-rec-box .feature-item-text {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.first-rec-image {
+  background-image: url(../img/house.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 72px;
+}
+
+.second-rec-image {
+  background-image: url(../img/burger.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 70px;
+}
+
+.third-rec-image {
+  background-image: url(../img/present.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 77px;
+}
+
+.features-special-box {
   background-color: var(--special);
-  padding: 48px 40px;
+  padding: 47px 20px 54px;
+}
+
+.features-special-box .feature-item-text {
+  max-width: 258px; /*тут тоже есть проблема с разным отображением шрифтов в мозиле и хроме*/
 }
 
 .interested {
