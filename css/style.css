@@ -158,66 +158,118 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
+  grid-template-areas:
+    "first-feature image-feature-right image-feature-right"
+    "first-service second-service third-service"
+    "image-feature-left image-feature-left second-feature"
+    "third-feature fourth-feature fifth-feature";
 }
 
-.features-image-box {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  background-color: var(--basic-light-blue);
+.features-list-element:nth-child(1) {
+  grid-area: first-feature;
+}
+
+.features-list-element:nth-child(2) {
+  grid-area: image-feature-right;
+}
+
+.features-list-element:nth-child(3) {
+  grid-area: first-service;
+}
+
+.features-list-element:nth-child(4) {
+  grid-area: second-service;
+}
+
+.features-list-element:nth-child(5) {
+  grid-area: third-service;
+}
+
+.features-list-element:nth-child(6) {
+  grid-area: image-feature-left;
+}
+
+.features-list-element:nth-child(7) {
+  grid-area: second-feature;
+}
+
+.features-list-element:nth-child(8) {
+  grid-area: third-feature;
+}
+
+.features-list-element:nth-child(9) {
+  grid-area: fourth-feature;
+}
+
+.features-list-element:nth-child(10) {
+  grid-area: fifth-feature;
+}
+
+.features-list-element {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.features-text-wrapper {
   padding: 50px 45px;
 }
 
-.feature-item-title {
+.service-image {
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 28px;
+}
+
+.features-list-element:nth-child(3) .service-image {
+  background-image: url(../img/house.svg);
+  height: 72px;
+  width: 75px;
+}
+
+.features-list-element:nth-child(4) .service-image {
+  background-image: url(../img/burger.svg);
+  height: 70px;
+  width: 75px;
+}
+
+.features-list-element:nth-child(5) .service-image {
+  background-image: url(../img/present.svg);
+  height: 77px;
+  width: 64px;
+}
+
+.features-list-element--blue {
+  background-color: var(--basic-light-blue);
+  color: var(--basic-white);
+}
+
+.features-list-element--image {
+  padding: 0;
+}
+
+.features-list-element--service {
+  padding: 60px 50px 80px;
+}
+
+.features-list-element--lightblue {
+  background-color: var(--special);
+  padding: 50px 71px;
+}
+
+.feature-element-title {
   font-size: 21px;
   font-weight: 700;
-  margin: 0 auto 25px;
+  margin-top: 0;
+  margin-bottom: 25px;
   max-width: 150px;
 }
 
-.feature-item-text {
-  margin: 23px auto 0;
+.feature-element-number {
+  margin-bottom: 23px;
 }
 
-.features-recommendation-box {
-  padding: 55px 50px 82px;
-  margin: auto;
-}
-
-:nth-child(2) .recommendation-image {
-  background-image: url(../img/house.svg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  height: 72px;
-  width: 75px;
-  margin: 0 auto 28px;
-}
-
-:nth-child(3) .recommendation-image {
-  background-image: url(../img/burger.svg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  height: 70px;
-  width: 75px;
-  margin: 0 auto 28px;
-}
-
-:nth-child(4) .recommendation-image {
-  background-image: url(../img/present.svg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  height: 77px;
-  width: 64px;
-  margin: 0 auto 28px;
-}
-
-.features-special-box {
-  background-color: var(--special);
-  padding: 0 26px;
+.feature-element-text {
+  margin: 0;
+  max-width: 310px; /*если конкретно этот элемент является самым широким в блоке и контролируется паддингами, то и макс-ширину ему тогда не надо задавать?*/
 }
 
 .interested {
