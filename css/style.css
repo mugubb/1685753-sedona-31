@@ -109,7 +109,8 @@ a {
   color: var(--basic-light-blue);
 }
 
-.navigation-link:focus {
+.navigation-link:focus,
+.navigation-link:active {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
@@ -269,7 +270,6 @@ a {
 
 .feature-element-text {
   margin: 0;
-  max-width: 310px; /*если конкретно этот элемент является самым широким в блоке и контролируется паддингами, то и макс-ширину ему тогда не надо задавать?*/
 }
 
 .interested {
@@ -279,6 +279,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .interested-title {
@@ -310,9 +311,11 @@ a {
   text-transform: uppercase;
   color: var(--basic-white);
   border: none;
+  cursor: pointer;
 }
 
-.button:focus {
+.button:focus,
+.button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -324,7 +327,8 @@ a {
   background-color: var(--basic-selected-dark);
 }
 
-.button-dark:focus {
+.button-dark:focus,
+.button-dark:active {
   background-color: var(--basic-extra-dark);
 }
 
@@ -336,144 +340,155 @@ a {
   background-color: var(--basic-blue);
 }
 
-.button-light:focus {
+.button-light:focus,
+.button-light:active {
   background-color: var(--basic-extra-blue);
 }
 
 /*pop-up*/
 
-.searching-popup {
-  width: 568px;
+.searching-form {
+  width: 458px;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   font-weight: 700;
   line-height: 26px;
-}
-
-.searching-form {
   padding: 55px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
 }
 
-.searching-form-item {
+.searching-item {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
 
+.searching-item--loose {
+  width: 45%;
+  justify-content: space-between;
+}
+
 .searching-text {
-  width: 100px;
   margin-right: 10px;
   flex-shrink: 0;
   text-align: start;
 }
 
-.count-wrapper .searching-form-item:nth-child(2) .searching-text {
-  text-align: center;
-}
-/*да, тут тройная вложенность, я правда не знаю как иначе добраться именно до этого лэйбла*/
-
-.input-wrapper {
+.searching-input-wrapper {
   position: relative;
   flex-grow: 1;
   display: flex;
 }
 
-.count-wrapper {
+.searching-count-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
-.popup-input {
+.searching-input-wrapper--loose {
+  width: 51%;
+  flex-grow: 0;
+}
+
+.searching-input {
   background-color: var(--basic-extra-light);
   border: none;
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  width: 100%;
+  width: 85%;
 }
 
-.popup-input:hover {
+.searching-input:hover {
   background-color: rgba(235, 235, 235, 1);
 }
 
-.popup-input:focus {
+.searching-input:focus,
+.searching-input:active {
   background-color: var(--basic-white);
-  border: 2px solid var(--basic-neutral);
-  outline: none;
+  outline: 2px solid var(--basic-neutral);
 }
 
-.popup-input--calendar {
+.searching-input-date {
   padding: 6px 42px 6px 12px;
 }
 
-.popup-input--count {
+.searching-input-count {
   padding: 6px 38px;
   text-align: center;
 }
 
-.popup-input--count::-webkit-outer-spin-button,
-.popup-input--count::-webkit-inner-spin-button {
+.searching-input-count::-webkit-outer-spin-button,
+.searching-input-count::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-.popup-input--count[type="number"] {
+.searching-input-count[type="number"] {
   -moz-appearance: textfield;
 }
 
-.popup-icons {
+.searching-input-icons {
   position: absolute;
   cursor: pointer;
+  color: rgba(169, 169, 169, 1);
 }
 
-.icon--calendar {
+.searching-input-icons:hover {
+  color: var(--basic-black);
+}
+
+.searching-input-icons:active {
+  color: var(--basic-light-blue);
+}
+
+.searching-input-icon--calendar {
   width: 21px;
   height: 23px;
   right: 8px;
   top: 8px;
 }
 
-.icon--minus {
+.searching-input-icon--minus {
   width: 12px;
   height: 4px;
   left: 13px;
   top: 18px;
 }
 
-.icon--plus {
+.searching-input-icon--plus {
   width: 12px;
   height: 12px;
   right: 13px;
   top: 13px;
 }
 
-.icon--calendar:hover path,
-.icon--plus:hover path,
-.icon--minus:hover rect {
-  fill: var(--basic-black);
-}
-
-.icon--calendar:focus path,
-.icon--plus:focus path,
-.icon--minus:focus rect {
-  fill: var(--basic-light-blue);
-}
-
-.popup-button {
+.searching-button {
   margin-top: 24px;
   padding: 16px;
-  cursor: pointer;
 }
 
-/*
 .modal-map {
+  background-image: url(../img/map.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  border: none;
 }
-*/
 
 .footer {
+  position: relative;
+}
+
+.footer-content-wrapper {
+  position: absolute;
+  transform: translateY(-100%);
   display: flex;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 1200px;
 }
 
 .footer-contacts {
@@ -492,15 +507,49 @@ a {
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   width: 33.33%;
 }
 
-.footer-social-item {
+.footer-social-list-item {
   margin-right: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-social-item:last-child {
+.footer-social-list-item:last-child {
   margin-right: 0;
+}
+
+.footer-social-icon {
+  width: 46px;
+  height: 48px;
+  color: var(--basic-white);
+}
+
+.footer-social-icon:focus,
+.footer-social-icon:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social-icon--twitter {
+  height: 17px;
+  width: 17px;
+  padding: 16px 15px;
+}
+
+.footer-social-icon--facebook {
+  height: 22px;
+  width: 12px;
+  padding: 13px 17px;
+}
+
+.footer-social-icon--youtube {
+  height: 16px;
+  width: 20px;
+  padding: 16px 13px;
 }
 
 .footer-copyright {
@@ -509,10 +558,20 @@ a {
   justify-content: center;
   align-items: center;
   width: 33.33%;
+  color: var(--basic-black);
 }
-.copyright-text {
-  margin-right: 15px;
+.footer-copyright-logo {
+  margin-left: 15px;
 }
+
+.footer-copyright:hover path {
+  color: var(--basic-light-blue);
+}
+
+.footer-copyright:focus path {
+  color: rgba(189, 187, 188, 1);
+}
+
 /*catalog.html*/
 
 /*
