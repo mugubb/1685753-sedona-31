@@ -27,6 +27,9 @@
   --basic-white: #ffffff;
   --special: #eeeeee;
   --special-grey: #666666;
+  --copyright-focus: #bdbbbc;
+  --basic-icon-color: #a9a9a9;
+  --input-hover: #ebebeb;
 }
 
 body {
@@ -376,6 +379,7 @@ a {
   margin-right: 10px;
   flex-shrink: 0;
   text-align: start;
+  width: 20%;
 }
 
 .searching-input-wrapper {
@@ -390,7 +394,7 @@ a {
 }
 
 .searching-input-wrapper--loose {
-  width: 51%;
+  width: 50%;
   flex-grow: 0;
 }
 
@@ -401,11 +405,11 @@ a {
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  width: 85%;
+  width: 100%;
 }
 
 .searching-input:hover {
-  background-color: rgba(235, 235, 235, 1);
+  background-color: var(--input-hover);
 }
 
 .searching-input:focus,
@@ -431,17 +435,17 @@ a {
   -moz-appearance: textfield;
 }
 
-.searching-input-icons {
+.searching-input-icon {
   position: absolute;
   cursor: pointer;
-  color: rgba(169, 169, 169, 1);
+  color: var(--basic-icon-color);
 }
 
-.searching-input-icons:hover {
+.searching-input-icon:hover {
   color: var(--basic-black);
 }
 
-.searching-input-icons:active {
+.searching-input-icon:active {
   color: var(--basic-light-blue);
 }
 
@@ -488,7 +492,7 @@ a {
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.9);
-  width: 1200px;
+  width: 100%;
 }
 
 .footer-contacts {
@@ -568,8 +572,9 @@ a {
   color: var(--basic-light-blue);
 }
 
-.footer-copyright:focus path {
-  color: rgba(189, 187, 188, 1);
+.footer-copyright:focus path,
+.footer-copyright:active path {
+  color: var(--copyright-focus);
 }
 
 /*catalog.html*/
