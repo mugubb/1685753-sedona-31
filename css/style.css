@@ -31,7 +31,7 @@
   --basic-icon-color: #a9a9a9;
   --input-hover: #ebebeb;
   --toggle-color: #ababab;
-  --lable-disabled: #6a6a6a;
+  --semi-dark-grey: #6a6a6a;
 }
 
 body {
@@ -513,9 +513,14 @@ a {
   width: 100%;
 }
 
+.inner-page-wrapper {
+  transform: translateY(0);
+}
+
 .footer-inner-page {
   display: flex;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-contacts {
@@ -604,15 +609,13 @@ a {
 
 .filter {
   background-image: url(../img/catalog/background.png);
-  background-position: center top;
+  background-position: center -250px;
   background-repeat: no-repeat;
-  height: 217px;
-  width: 1200px;
   color: var(--basic-white);
 }
 
 .filter-form {
-  padding: 27px 72px 31px 72px;
+  padding: 27px 72px 0 72px;
   display: flex;
 }
 
@@ -643,17 +646,11 @@ a {
 
 .filter-label {
   position: relative;
-  display: block;
   cursor: pointer;
   user-select: none;
 }
 
-.filter-label:focus,
-.filter-label:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.filter-checkbox + .filter-label::before {
+.filter-label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -674,7 +671,7 @@ a {
 }
 
 .filter-checkbox:disabled + .filter-label {
-  color: var(--lable-disabled);
+  color: var(--semi-dark-grey);
 }
 
 .range-filter-wrapper {
@@ -773,6 +770,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  margin-bottom: 32px;
   padding: 6px;
   background-color: unset;
   border: 2px solid var(--basic-white);
