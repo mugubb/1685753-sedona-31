@@ -636,7 +636,12 @@ a {
 .filter-list {
   padding: 0;
   margin: 0;
+  margin-bottom: 32px;
   list-style: none;
+}
+
+.filter-list .filter-list-item:last-child {
+  margin-bottom: 0;
 }
 
 .filter-list-item {
@@ -755,8 +760,7 @@ a {
 
 .filter-price-input {
   width: 40px;
-  padding: 10px;
-  padding-left: 5px;
+  padding: 5px;
   color: var(--basic-white);
   border: none;
   outline: none;
@@ -770,7 +774,6 @@ a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  margin-bottom: 32px;
   padding: 6px;
   background-color: unset;
   border: 2px solid var(--basic-white);
@@ -811,7 +814,7 @@ a {
   line-height: 18px;
 }
 
-.sorting-type-by {
+.sorting-button {
   font: inherit;
   font-size: 12px;
   line-height: 18px;
@@ -826,17 +829,17 @@ a {
   border: none;
 }
 
-.sorting-type-by:hover {
+.sorting-button:hover {
   color: var(--basic-light-blue);
 }
 
-.sorting-type-by:focus {
+.sorting-button:focus {
   text-decoration-line: none;
   text-decoration-style: none;
   color: var(--basic-black);
 }
 
-.sorting-type-by:active {
+.sorting-button:active {
   text-decoration-line: none;
   text-decoration-style: none;
   color: var(--basic-light-blue);
