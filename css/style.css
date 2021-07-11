@@ -640,13 +640,13 @@ a {
   list-style: none;
 }
 
-.filter-list .filter-list-item:last-child {
-  margin-bottom: 0;
-}
-
 .filter-list-item {
   margin-bottom: 25px;
   padding-left: 40px;
+}
+
+.filter-list-item:last-child {
+  margin-bottom: 0;
 }
 
 .filter-label {
