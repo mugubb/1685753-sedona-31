@@ -20,7 +20,7 @@
         <li class="navigation-list-item"><a class="navigation-link" href="blank.html">Информация</a></li>
         <li class="navigation-list-item"><a class="navigation-link" href="blank.html">Фото и видео</a></li>
         <li class="navigation-list-item"><a class="navigation-link" href="blank.html">Карта штата</a></li>
-        <li class="navigation-list-item"><a class="navigation-link navigation-current-page"
+        <li class="navigation-list-item"><a class="navigation-link navigation-link--current"
             href="blank.html">Гостиницы</a>
       </ul>
     </nav>
@@ -91,9 +91,9 @@
     <section class="sorting">
       <span class="sorting-result-number">Найдено: 3</span>
       <span class="sorting-type">Сортировка:</span>
-      <ol class="sorting-list">
+      <ul class="sorting-list">
         <li class="sorting-list-item">
-          <button class="sorting-button sorting-current" type="button" name="by-price">По цене</button>
+          <button class="sorting-button sorting-button--current" type="button" name="by-price">По цене</button>
         </li>
         <li class="sorting-list-item">
           <button class="sorting-button" type="button" name="by-type">По типу</button>
@@ -101,9 +101,9 @@
         <li class="sorting-list-item">
           <button class="sorting-button" type="button" name="by-rating">По рейтингу</button>
         </li>
-      </ol>
+      </ul>
       <div class="sorting-icons-wrapper">
-        <div class="sorting-icon sorting-icon--up sorting-current">
+        <div class="sorting-icon sorting-icon--up sorting-icon--current">
           <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 0L0 10H11L5.5 0Z" fill="currentColor" />
           </svg>
@@ -115,23 +115,25 @@
         </div>
       </div>
     </section>
-    <section class="result">
+    <section class="search-result">
       <ol class="result-list">
         <li class="result-list-item">
           <a class="result-link-image" href="blank.html">
             <img src="img/catalog/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
           </a>
-          <div class="result-info-wrapper">
+          <div class="result-block-wrapper">
             <a href="blank.html">
               <h3 class="result-title">Amara Resort & Spa</h3>
             </a>
-            <div class="result-text-wrapper">
-              <span class="result-text">Гостиница</span>
-              <span class="result-text">От 4000 &#8381</span>
-            </div>
-            <div class="result-buttons-wrapper">
-              <a class="button button-light result-button" href="blank.html">Подробнее</a>
-              <a class="button button-dark result-button" href="blank.html">Забронировать</a>
+            <div class="result-info-wrapper">
+              <div class="result-unit-wrapper">
+                <span class="result-text">Гостиница</span>
+                <a class="button button-light result-button" href="blank.html">Подробнее</a>
+              </div>
+              <div class="result-unit-wrapper">
+                <span class="result-text">От 4000 &#8381</span>
+                <a class="button button-dark result-button" href="blank.html">Забронировать</a>
+              </div>
             </div>
           </div>
           <div class="result-rating-wrapper">
@@ -149,17 +151,19 @@
             <img class="result-link-image" src="img/catalog/Desert-Quail-Inn.jpg" width="135" height="90"
               alt="Desert Quail Inn">
           </a>
-          <div class="result-info-wrapper">
+          <div class="result-block-wrapper">
             <a href="blank.html">
               <h3 class="result-title">Desert Quail Inn</h3>
             </a>
-            <div class="result-text-wrapper">
-              <span class="result-text">Мотель</span>
-              <span class="result-text">От 3000 &#8381</span>
-            </div>
-            <div class="result-buttons-wrapper">
-              <a class="button button-light result-button" href="blank.html">Подробнее</a>
-              <a class="button button-dark result-button" href="blank.html">Забронировать</a>
+            <div class="result-info-wrapper">
+              <div class="result-unit-wrapper">
+                <span class="result-text">Мотель</span>
+                <a class="button button-light result-button" href="blank.html">Подробнее</a>
+              </div>
+              <div class="result-unit-wrapper">
+                <span class="result-text">От 3000 &#8381</span>
+                <a class="button button-dark result-button" href="blank.html">Забронировать</a>
+              </div>
             </div>
           </div>
           <div class="result-rating-wrapper">
@@ -175,17 +179,19 @@
           <a class="result-link-image" href="blank.html">
             <img src="img/catalog/Villas-at-Poco-Diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           </a>
-          <div class="result-info-wrapper">
+          <div class="result-block-wrapper">
             <a class="result-link-text" href="blank.html">
               <h3 class="result-title">Villas at Poco Diablo</h3>
             </a>
-            <div class="result-text-wrapper">
-              <span class="result-text">Апартаменты</span>
-              <span class="result-text">От 2000 &#8381</span>
-            </div>
-            <div class="result-buttons-wrapper">
-              <a class="button button-light result-button" href="blank.html">Подробнее</a>
-              <a class="button button-dark result-button" href="blank.html">Забронировать</a>
+            <div class="result-info-wrapper">
+              <div class="result-unit-wrapper">
+                <span class="result-text">Апартаменты</span>
+                <a class="button button-light result-button" href="blank.html">Подробнее</a>
+              </div>
+              <div class="result-unit-wrapper">
+                <span class="result-text">От 2000 &#8381</span>
+                <a class="button button-dark result-button" href="blank.html">Забронировать</a>
+              </div>
             </div>
           </div>
           <div class="result-rating-wrapper">
@@ -236,7 +242,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer-copyright" href="https://htmlacademy.ru">
+      <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
         Website by
         <svg class="footer-copyright-logo" width="115" height="33" viewBox="0 0 115 33" fill="none"
           xmlns="http://www.w3.org/2000/svg">
