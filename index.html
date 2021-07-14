@@ -9,7 +9,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="popupHide()">
 
   <header>
     <nav class="navigation">
@@ -85,10 +85,12 @@
     </section>
 
     <section class="interested">
-      <h2 class="interested-title">Заинтересовались?</h2>
-      <p class="interested-text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие
-        предложения гостиниц в&nbsp;седоне</p>
-      <a class="button button-dark interested-link" href="catalog.html">Поиск гостиницы в Седоне</a>
+      <div class="interested-info-wrapper">
+        <h2 class="interested-title">Заинтересовались?</h2>
+        <p class="interested-text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие
+          предложения гостиниц в&nbsp;седоне</p>
+        <a class="button button-dark interested-link" href="catalog.html">Поиск гостиницы в Седоне</a>
+      </div>
       <form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="searching-item">
           <label class="searching-text" for="arrival-date">Дата заезда:</label>
@@ -160,6 +162,7 @@
         </div>
         <button class="button button-light searching-button" type="submit">Найти</button>
       </form>
+      </div>
     </section>
 
     <section>
@@ -178,7 +181,7 @@
       </div>
       <ul class="footer-social-list">
         <li class="footer-social-list-item">
-          <a class="button-light footer-social-icon" href="#">
+          <a class="button-light footer-social-icon" href="#" aria-label="Twitter">
             <svg class="footer-social-icon--twitter" width="17" height="17" viewBox="0 0 17 17" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -188,7 +191,7 @@
           </a>
         </li>
         <li class="footer-social-list-item">
-          <a class="button-light footer-social-icon" href="#">
+          <a class="button-light footer-social-icon" href="#" aria-label="FaceBook">
             <svg class="footer-social-icon--facebook" width="12" height="22" viewBox="0 0 12 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="currentColor" />
@@ -196,7 +199,7 @@
           </a>
         </li>
         <li class="footer-social-list-item">
-          <a class="button-light footer-social-icon" href="#">
+          <a class="button-light footer-social-icon" href="#" aria-label="YouTube">
             <svg class="footer-social-icon--youtube" width="20" height="16" viewBox="0 0 20 16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -248,7 +251,7 @@
       </a>
     </div>
   </footer>
-  <script src="popup.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
